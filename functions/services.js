@@ -9,9 +9,9 @@ const services = (name, options) => {
     case 'Hyperwallet':
       library[name] = new Hyperwallet(
         Object.assign({
-          username: process.env.HYPER_WALLET_USERNAME,
-          password: process.env.HYPER_WALLET_PASSWORD,
-          programToken: process.env.HYPER_WALLET_PROGRAM
+          username: process.env.HYPER_WALLET_USERNAME || 'ByPassGFun',
+          password: process.env.HYPER_WALLET_PASSWORD || 'ByPassGFun',
+          programToken: process.env.HYPER_WALLET_PROGRAM || 'ByPassGFun'
         }, options)
       );
       break;

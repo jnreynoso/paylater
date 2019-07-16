@@ -5,6 +5,7 @@ const { Router } = express
 const router = Router()
 
 router.use('/users', require('./users'));
+router.use('/payments', require('./payments'));
 
 router.use((err, req, res, next) => {
   console.error('Global error handler', err.message);
