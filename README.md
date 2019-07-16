@@ -7,7 +7,7 @@ Las tareas solicitadas fueron las siguientes:
 
 - [x] Crear un usuario.
 - [x] Listar usuarios.
-- [x] Registrar el método de pago para usario.
+- [x] Registrar el método de pago para usuario.
 - [x] Listar método de pago dado un usuario.
 - [x] Emitir un pago.
 
