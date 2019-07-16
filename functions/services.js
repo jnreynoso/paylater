@@ -1,3 +1,4 @@
+const functions = require('firebase-functions');
 const Hyperwallet = require('hyperwallet-sdk');
 
 var library = {};
@@ -9,9 +10,9 @@ const services = (name, options) => {
     case 'Hyperwallet':
       library[name] = new Hyperwallet(
         Object.assign({
-          username: process.env.HYPER_WALLET_USERNAME || 'ByPassGFun',
-          password: process.env.HYPER_WALLET_PASSWORD || 'ByPassGFun',
-          programToken: process.env.HYPER_WALLET_PROGRAM || 'ByPassGFun'
+          username: functions.config().hyperwallet.username,
+          password: functions.config().hyperwallet.password,
+          programToken: functions.config().hyperwallet.program
         }, options)
       );
       break;
