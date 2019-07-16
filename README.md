@@ -20,7 +20,7 @@ no se pudieron usar, entre ellos:
 - Rest Operator
 - Import
 
-No implemente BabelJS para el soporte de estos features y otros, por que la herramienta `firebase-tools` configura un setup
+No implementé BabelJS para el soporte de estos features y otros, por que la herramienta `firebase-tools` configura un setup
 inicial, él cual, por motivos de tiempo no pude extender para agregar BabelJS.
 
 Con respecto al sdk de *Hyperwallet*, el flavor usado por esta libreria paras las operaciones asíncronas es *Callback*. También por
